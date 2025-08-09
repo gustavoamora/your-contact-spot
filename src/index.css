@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 240 20% 12%;
 
-    --primary: 250 84% 54%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 250 84% 64%;
+    --primary-glow: 217 91% 70%;
 
     --secondary: 240 30% 94%;
     --secondary-foreground: 240 20% 12%;
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 240 15% 96%;
     --muted-foreground: 240 10% 55%;
 
-    --accent: 280 84% 60%;
+    --accent: 270 95% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -37,13 +37,15 @@ All colors MUST be HSL.
     --input: 240 15% 96%;
     --ring: 250 84% 54%;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(250 84% 54%), hsl(280 84% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(250 84% 54% / 0.1), hsl(280 84% 60% / 0.05));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(240 15% 98%));
+    /* Custom design tokens - Umbler inspired */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(270 95% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.1), hsl(270 95% 65% / 0.05));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(217 91% 98%));
+    --gradient-umbler: linear-gradient(135deg, hsl(217 91% 60%), hsl(213 89% 55%));
     
-    --shadow-elegant: 0 10px 30px -10px hsl(250 84% 54% / 0.2);
-    --shadow-glow: 0 0 40px hsl(250 84% 54% / 0.15);
+    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.2);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.15);
+    --shadow-card: 0 4px 20px hsl(217 91% 60% / 0.1);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -77,9 +79,9 @@ All colors MUST be HSL.
     --popover: 240 20% 8%;
     --popover-foreground: 240 15% 95%;
 
-    --primary: 250 84% 54%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 250 84% 64%;
+    --primary-glow: 217 91% 70%;
 
     --secondary: 240 20% 12%;
     --secondary-foreground: 240 15% 90%;
@@ -87,7 +89,7 @@ All colors MUST be HSL.
     --muted: 240 20% 10%;
     --muted-foreground: 240 10% 65%;
 
-    --accent: 280 84% 60%;
+    --accent: 270 95% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -97,13 +99,15 @@ All colors MUST be HSL.
     --input: 240 20% 12%;
     --ring: 250 84% 54%;
 
-    /* Dark mode custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(250 84% 54%), hsl(280 84% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(250 84% 54% / 0.15), hsl(280 84% 60% / 0.1));
+    /* Dark mode custom tokens - Umbler inspired */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(270 95% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.15), hsl(270 95% 65% / 0.1));
     --gradient-card: linear-gradient(145deg, hsl(240 20% 8%), hsl(240 20% 10%));
+    --gradient-umbler: linear-gradient(135deg, hsl(217 91% 60%), hsl(213 89% 55%));
     
-    --shadow-elegant: 0 10px 30px -10px hsl(250 84% 54% / 0.3);
-    --shadow-glow: 0 0 40px hsl(250 84% 54% / 0.2);
+    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.3);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 4px 20px hsl(217 91% 60% / 0.15);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

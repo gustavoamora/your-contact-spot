@@ -99,66 +99,63 @@ export const ContactSection = () => {
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Nome *</Label>
-                    <Input 
-                      id="name" 
-                      name="name"
-                      placeholder="Seu nome completo" 
-                      required 
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input 
-                      id="email" 
-                      name="email"
-                      type="email" 
-                      placeholder="seu@email.com" 
-                      required 
-                    />
-                  </div>
-                </div>
-                
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Telefone</Label>
+                  <Label htmlFor="name">Nome Completo *</Label>
                   <Input 
-                    id="phone" 
-                    name="phone"
-                    placeholder="(11) 99999-9999" 
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Assunto *</Label>
-                  <Input 
-                    id="subject" 
-                    name="subject"
-                    placeholder="Como podemos ajudar?" 
+                    id="name" 
+                    name="name"
+                    placeholder="Como você gostaria de ser chamado?" 
+                    className="h-12"
                     required 
                   />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Mensagem *</Label>
+                  <Label htmlFor="email">E-mail Profissional *</Label>
+                  <Input 
+                    id="email" 
+                    name="email"
+                    type="email" 
+                    placeholder="seu.email@empresa.com" 
+                    className="h-12"
+                    required 
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="company">Empresa</Label>
+                  <Input 
+                    id="company" 
+                    name="company"
+                    placeholder="Nome da sua empresa" 
+                    className="h-12"
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="message">Como podemos ajudar? *</Label>
                   <Textarea 
                     id="message" 
                     name="message"
-                    placeholder="Conte-nos mais sobre seu projeto..." 
-                    className="min-h-32" 
+                    placeholder="Conte-nos sobre seu projeto, necessidades específicas ou dúvidas..." 
+                    rows={4}
+                    className="resize-none"
                     required 
                   />
                 </div>
                 
                 <Button 
                   type="submit" 
-                  variant="gradient" 
-                  className="w-full"
+                  size="lg" 
+                  className="w-full h-12 bg-gradient-umbler hover:shadow-glow transition-smooth"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
+                  {isSubmitting ? "Enviando..." : "Quero uma Proposta Personalizada"}
                 </Button>
+                
+                <p className="text-xs text-muted-foreground text-center">
+                  Responderemos em até 2 horas durante o horário comercial
+                </p>
               </form>
             </CardContent>
           </Card>

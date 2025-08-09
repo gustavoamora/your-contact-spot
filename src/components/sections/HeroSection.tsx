@@ -32,20 +32,36 @@ export const HeroSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                variant="hero" 
+                variant="default" 
                 size="lg" 
                 onClick={scrollToContact}
-                className="text-lg px-8 py-6"
+                className="text-lg px-8 py-6 bg-gradient-umbler hover:shadow-glow transition-smooth"
               >
-                Entrar em Contato
+                Comece Agora - É Grátis
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="text-lg px-8 py-6"
+                className="text-lg px-8 py-6 border-primary/30 text-primary hover:bg-primary/5"
               >
-                Saiba Mais
+                Ver Demonstração
               </Button>
+            </div>
+
+            {/* Social proof numbers - Umbler style */}
+            <div className="flex flex-wrap gap-8 pt-4">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">50K+</div>
+                <div className="text-sm text-muted-foreground">Clientes Ativos</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">99.9%</div>
+                <div className="text-sm text-muted-foreground">Uptime</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground">Suporte</div>
+              </div>
             </div>
           </div>
           
